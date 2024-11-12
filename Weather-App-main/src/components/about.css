@@ -1,0 +1,98 @@
+/* About.css */
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    padding: 20px;
+  }
+  
+  .about-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px white(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-content {
+    padding: 30px;
+    color: white;
+    position: relative;
+   background-image: url('https://images.pexels.com/photos/1154510/pexels-photo-1154510.jpeg?cs=srgb&dl=pexels-josh-sorenson-1154510.jpg&fm=jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+  }
+  
+  .about-content::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay to improve text readability */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+  }
+  
+  .about-content h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .about-content ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .about-content ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .about-content ul li::before {
+    content: "🌤"; /* Example icon, can be customized */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+  }
+  
+  .about-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about-content a:hover {
+    text-decoration: underline;
+  }
+  

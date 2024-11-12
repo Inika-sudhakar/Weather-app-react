@@ -1,0 +1,13 @@
+/* Map Page Styles */
+.map-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .map {
+    height: 80vh; /* Full viewport height */
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+  }
+  
